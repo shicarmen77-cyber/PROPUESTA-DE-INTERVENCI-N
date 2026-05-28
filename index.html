@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Recordar para Sonreír | Proyecto Psicosocial</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f4f6f9;
+color:#333;
+line-height:1.8;
+}
+
+/* NAVBAR */
+
+nav{
+background:#3f215e;
+padding:18px 8%;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+list-style:none;
+}
+
+nav ul li{
+margin:0 15px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-size:15px;
+font-weight:500;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#ffd166;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(32,15,48,0.75),rgba(32,15,48,0.75)),
+url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1400&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+color:white;
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+font-weight:700;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.hero button{
+padding:15px 35px;
+border:none;
+border-radius:50px;
+background:#ffd166;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero button:hover{
+background:white;
+}
+
+/* SECCIONES */
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-size:38px;
+color:#3f215e;
+margin-bottom:15px;
+}
+
+.section-title p{
+color:#666;
+max-width:800px;
+margin:auto;
+}
+
+/* CARDS */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card h3{
+color:#3f215e;
+margin-bottom:15px;
+font-size:22px;
+}
+
+.card ul{
+padding-left:20px;
+}
+
+.card li{
+margin-bottom:10px;
+}
+
+/* BLOQUES */
+
+.info-box{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* TABLA */
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:30px;
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+th{
+background:#3f215e;
+color:white;
+padding:18px;
+}
+
+td{
+padding:16px;
+text-align:center;
+border-bottom:1px solid #eee;
+}
+
+/* FOOTER */
+
+footer{
+background:#241334;
+color:white;
+text-align:center;
+padding:50px 20px;
+}
+
+footer p{
+margin:10px 0;
+color:#ddd;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.section-title h2{
+font-size:30px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+
+<nav>
+<ul>
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#diagnostico">Diagnóstico</a></li>
+<li><a href="#saludmental">Salud Mental</a></li>
+<li><a href="#salud">Acceso a Salud</a></li>
+<li><a href="#economia">Condiciones Socioeconómicas</a></li>
+<li><a href="#propuesta">Intervención</a></li>
+<li><a href="#actividades">Actividades</a></li>
+<li><a href="#costos">Costos</a></li>
+<li><a href="#referencias">Referencias</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero" id="inicio">
+
+<div class="hero-content">
+
+<h1>Recordar para Sonreír</h1>
+
+<p>
+Proyecto de intervención psicosocial enfocado en la prevención de la depresión
+y el aislamiento socioemocional en adultos mayores de la Residencia Vital Home S.R.L.
+de la ciudad de La Paz - Bolivia.
+</p>
+
+<a href="#diagnostico">
+<button>Ver Diagnóstico</button>
+</a>
+
+</div>
+
+</section>
+
+<!-- DIAGNOSTICO -->
+
+<section id="diagnostico">
+
+<div class="section-title">
+
+<h2>Diagnóstico Psicosocial</h2>
+
+<p>
+El diagnóstico permitió identificar factores emocionales, sociales y psicológicos
+que afectan la calidad de vida y el bienestar emocional de los adultos mayores
+institucionalizados.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Problema Central</h3>
+
+<p>
+Se identificó la presencia de depresión y aislamiento socioemocional
+en adultos mayores residentes de Vital Home S.R.L., relacionados con
+sentimientos de soledad, abandono emocional y disminución de participación social.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Principales Causas</h3>
+
+<ul>
+<li>Escasa interacción familiar y social.</li>
+<li>Pocas actividades recreativas y grupales.</li>
+<li>Disminución de autonomía.</li>
+<li>Débil acompañamiento emocional.</li>
+<li>Sentimientos de inutilidad y abandono.</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Consecuencias Detectadas</h3>
+
+<ul>
+<li>Incremento de síntomas depresivos.</li>
+<li>Deterioro emocional y cognitivo.</li>
+<li>Baja autoestima.</li>
+<li>Aislamiento social.</li>
+<li>Disminución de participación recreativa.</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SALUD MENTAL -->
+
+<section id="saludmental">
+
+<div class="section-title">
+
+<h2>Salud Mental</h2>
+
+<p>
+La salud mental en adultos mayores constituye un aspecto fundamental
+para garantizar bienestar emocional, integración social y calidad de vida.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Factores de Riesgo</h3>
+
+<ul>
+<li>Soledad prolongada.</li>
+<li>Pérdida de vínculos afectivos.</li>
+<li>Falta de espacios de escucha activa.</li>
+<li>Aislamiento social.</li>
+<li>Desmotivación emocional.</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Impacto Emocional</h3>
+
+<p>
+El aislamiento socioemocional puede generar tristeza persistente,
+sentimientos de inutilidad, ansiedad y dificultades para mantener
+relaciones sociales saludables.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Importancia de la Intervención</h3>
+
+<p>
+Promover actividades grupales y acompañamiento emocional ayuda
+a fortalecer la autoestima, la participación activa y el bienestar psicológico.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ACCESO A SALUD -->
+
+<section id="salud">
+
+<div class="section-title">
+
+<h2>Acceso a Salud</h2>
+
+<p>
+La residencia cuenta con acceso básico a servicios médicos; sin embargo,
+se identificó la necesidad de fortalecer el apoyo psicológico y emocional.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Necesidades Identificadas</h3>
+
+<ul>
+<li>Atención psicológica continua.</li>
+<li>Prevención de depresión.</li>
+<li>Espacios terapéuticos grupales.</li>
+<li>Actividades recreativas permanentes.</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Bienestar Integral</h3>
+
+<p>
+El acceso a salud no solo implica atención física,
+sino también acompañamiento emocional y fortalecimiento
+de relaciones sociales saludables.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ECONOMIA -->
+
+<section id="economia">
+
+<div class="section-title">
+
+<h2>Condiciones Socioeconómicas</h2>
+
+<p>
+Las condiciones económicas y sociales influyen directamente
+en la estabilidad emocional y calidad de vida de los residentes.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Factores Observados</h3>
+
+<ul>
+<li>Dependencia económica.</li>
+<li>Incremento de gastos médicos.</li>
+<li>Necesidad de apoyo institucional.</li>
+<li>Limitación de recursos recreativos.</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Impacto Social</h3>
+
+<p>
+La falta de recursos puede afectar la participación social,
+el acceso a actividades de bienestar emocional y la autoestima
+de los adultos mayores.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PROPUESTA -->
+
+<section id="propuesta">
+
+<div class="section-title">
+
+<h2>Propuesta de Intervención</h2>
+
+<p>
+La propuesta busca fortalecer el bienestar socioemocional
+mediante actividades recreativas, dinámicas grupales y espacios
+de acompañamiento emocional.
+</p>
+
+</div>
+
+<div class="info-box">
+
+<h3>Objetivo General</h3>
+
+<p>
+Fortalecer el bienestar socioemocional de los adultos mayores
+de la Residencia Vital Home S.R.L. mediante actividades orientadas
+a la prevención de la depresión y el aislamiento emocional.
+</p>
+
+<br><br>
+
+<h3>Objetivos Específicos</h3>
+
+<ul>
+
+<li>Identificar factores relacionados con la depresión y el aislamiento emocional.</li>
+
+<li>Promover actividades recreativas e integración social.</li>
+
+<li>Fortalecer la autoestima y participación activa.</li>
+
+<li>Desarrollar espacios de escucha activa y acompañamiento emocional.</li>
+
+<li>Mejorar la convivencia y relaciones interpersonales.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- ACTIVIDADES -->
+
+<section id="actividades">
+
+<div class="section-title">
+
+<h2>Plan de Actividades</h2>
+
+<p>
+Las sesiones fueron diseñadas para promover integración social,
+expresión emocional y fortalecimiento del bienestar psicológico.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Sesión 1</h3>
+
+<p>
+Actividades de integración y confianza grupal mediante dinámicas
+recreativas y participación colectiva.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Sesión 2</h3>
+
+<p>
+Expresión emocional y fortalecimiento de recuerdos positivos
+a través de conversaciones y música.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Sesión 3</h3>
+
+<p>
+Escucha activa y acompañamiento emocional para reducir
+sentimientos de soledad y aislamiento.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Sesión 4</h3>
+
+<p>
+Reflexión grupal, fortalecimiento emocional y cierre de actividades
+con mensajes positivos y convivencia grupal.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- COSTOS -->
+
+<section id="costos">
+
+<div class="section-title">
+
+<h2>Costos del Proyecto</h2>
+
+<p>
+El proyecto fue desarrollado utilizando materiales accesibles
+y recursos recreativos de bajo costo.
+</p>
+
+</div>
+
+<table>
+
+<tr>
+<th>Recursos</th>
+<th>Costo</th>
+</tr>
+
+<tr>
+<td>Materiales Recreativos</td>
+<td>80 Bs</td>
+</tr>
+
+<tr>
+<td>Refrigerios</td>
+<td>120 Bs</td>
+</tr>
+
+<tr>
+<td>Transporte</td>
+<td>80 Bs</td>
+</tr>
+
+<tr>
+<th>Total</th>
+<th>280 Bs</th>
+</tr>
+
+</table>
+
+</section>
+
+<!-- REFERENCIAS -->
+
+<section id="referencias">
+
+<div class="section-title">
+
+<h2>Referencias Bibliográficas</h2>
+
+<p>
+Fuentes académicas utilizadas para la elaboración del proyecto.
+</p>
+
+</div>
+
+<div class="info-box">
+
+<ul>
+
+<li>Ander-Egg, E. (2000). Metodología y práctica del desarrollo de la comunidad.</li>
+
+<li>Chávez-Negrete, L. A., Olivares-Luna, A. M., Rivera-Rodríguez, J. M., y Pedraza-Avilés, A. G. (2021).</li>
+
+<li>Gallard Muñoz, I. E., Gutiérrez Pliego, L. E., y Bérrios Rivas, A. T. (2024).</li>
+
+<li>Organización Mundial de la Salud (2022). Envejecimiento y salud.</li>
+
+<li>Organización Mundial de la Salud (2023). Salud mental de los adultos mayores.</li>
+
+<li>Retolaza Eguren, I. (2018). Teoría de cambio.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h2>Universidad Privada Franz Tamayo</h2>
+
+<p>Facultad de Ciencias Jurídicas y Sociales</p>
+
+<p>Carrera de Psicología</p>
+
+<p>Proyecto de Intervención Psicosocial</p>
+
+<p>La Paz - Bolivia | 2026</p>
+
+</footer>
+
+</body>
+</html>
